@@ -15,7 +15,6 @@ class ux_tslib_content_ImageResource extends tslib_content_ImageResource {
 		// ###################################
 		if (is_array($GLOBALS['TSFE']->lastImgResourceInfo)) {
 			// call fl_realurl_image to generate $new_fileName
-			require_once(t3lib_extMgm::extPath('fl_realurl_image') . 'Classes/class.tx_flrealurlimage.php');
 			$tx_flrealurlimage = new tx_flrealurlimage();
 			$tx_flrealurlimage->start($this->data, $this->table);
 			$new_fileName = $tx_flrealurlimage->main($conf, $GLOBALS['TSFE']->lastImgResourceInfo);

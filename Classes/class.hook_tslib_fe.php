@@ -23,8 +23,6 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  * ************************************************************* */
 
-require_once(t3lib_extMgm::extPath('fl_realurl_image') . 'Classes/class.tx_flrealurlimage.php');
-
 /**
  * Class hook_tslib_fe
  */

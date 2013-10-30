@@ -23,7 +23,9 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  * ************************************************************* */
 
-require_once(PATH_tslib . 'class.tslib_pibase.php');
+if (!t3lib_div::compat_version('6.0')) {
+	require_once(PATH_tslib . 'class.tslib_pibase.php');
+}
 
 /**
  * The main class of fl_realurl_image

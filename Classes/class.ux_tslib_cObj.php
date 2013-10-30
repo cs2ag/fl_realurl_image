@@ -23,8 +23,9 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  * ************************************************************* */
 
-require_once(PATH_tslib . 'class.tslib_pibase.php');
-require_once(t3lib_extMgm::extPath('fl_realurl_image') . 'Classes/class.tx_flrealurlimage.php');
+if (!t3lib_div::compat_version('6.0')) {
+	require_once(PATH_tslib . 'class.tslib_pibase.php');
+}
 
 /**
  * Extends tslib_cObj to change the path for the images
